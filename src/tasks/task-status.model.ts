@@ -1,4 +1,4 @@
-import { TaskStatus } from './task-status.model';
+import { TaskStatus } from './task-status.enum';
 
 export interface Task {
   id: string;
