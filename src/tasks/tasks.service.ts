@@ -21,7 +21,7 @@ export class TasksService {
     const record = this.tasksRepository.findOne({ where: { id, user } });
 
     if (!record) {
-      throw new NotFoundException();
+      throw new NotFoundException('Error');
     }
     return record;
   }
